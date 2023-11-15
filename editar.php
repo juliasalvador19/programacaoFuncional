@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
         if (mysqli_query($conn, $query)) {
             echo "Cartão atualizado com sucesso!";
             
-            header("Location: index.php");
+            header("Location: index.php"); // Voltar para a página index.php
         } else {
             echo "Erro ao atualizar o cartão: " . mysqli_error($conn);
         }
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
         exit;
     }
 } else {
-    echo "ID do cartão não fornecido";
+    echo "ID do cartão não fornecido"; // Ocorre esse aviso se o ID não for fornecido (Por exemplo, se acessar direto a página editar.php sem o parâmetro ID) 
     exit;
 }
 ?>
@@ -58,6 +58,7 @@ if (isset($_GET['id'])) {
     </header>
 
     <main>
+        <!-- Formulário para editar  o cartão -->
         <form class="formulario-cartao" action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="post">
             <h3>Editar Cartão</h3>
             <input class="forms-campo" type="hidden" name="id" value="<?php echo $card['id']; ?>">
