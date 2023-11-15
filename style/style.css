@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: rgb(21, 32, 53);;
+}
+
+.home {
+    background-color: #161A1D;
+    padding: 20px;
+}
+
+.home-logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.home-logo img{
+    width: 30px;
+    margin: 0 8px 0 0;
+}
+
+main{
+    margin: 0 50px;
+    color: white;
+}
+
+.formulario-cartao {
+    padding: 20px 0;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+section{
+    align-items: center;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.home-rodape {
+    padding: 50px;
+    background-color: #161A1D;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Pendente {
+    background-color: red;
+    border: 1px solid red;
+}
